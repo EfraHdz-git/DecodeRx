@@ -1,0 +1,406 @@
+/* Main Styles for DecodeRx Application */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+  /* Left Info Panel */
+  .info-panel {
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    padding: 25px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  }
+  
+  .info-panel-content {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .info-section {
+    margin-bottom: 24px;
+  }
+  
+  .info-section h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-section p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .info-section ul {
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .badge {
+    font-weight: 500;
+    padding: 6px 10px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+  
+  /* Main App Panel */
+  .app-panel {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .app-logo {
+    color: #007BFF;
+    font-weight: 600;
+  }
+  
+  /* Search Container */
+  .search-container {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+  }
+  
+  .input-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .input-method {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .input-method-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #444;
+  }
+  
+  .image-preview {
+    max-height: 150px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* Results Container */
+  .results-container {
+    margin-bottom: 30px;
+  }
+  
+  .chat-bubble {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e9e9e9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .chat-bubble h4 {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .chat-bubble h4:first-child {
+    margin-top: 0;
+  }
+  
+  .chat-bubble ul {
+    padding-left: 20px;
+  }
+  
+  .chat-bubble li {
+    margin-bottom: 6px;
+  }
+  
+  .similar-meds-panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e9e9e9;
+    height: 100%;
+  }
+  
+  .action-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Voice Recognition */
+  .voice-feedback {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    min-height: 40px;
+  }
+  
+  .voice-wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 30px;
+  }
+  
+  .wave-bar {
+    width: 4px;
+    height: 15px;
+    background-color: #007BFF;
+    border-radius: 2px;
+    animation: wave 1s infinite ease-in-out;
+  }
+  
+  .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+  .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+  .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+  .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+  
+  @keyframes wave {
+    0%, 100% { height: 10px; }
+    50% { height: 25px; }
+  }
+  
+  .recognized-text {
+    font-style: italic;
+    color: #444;
+  }
+  
+  /* Tech Stack */
+  .tech-stack-panel {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .tech-stack-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+  }
+  
+  .tech-category {
+    color: #444;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tech-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .tech-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .tech-badge {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin-right: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .tech-badge.flask {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .tech-badge.bootstrap {
+    background-color: #7952B3;
+    color: white;
+  }
+  
+  .tech-badge.hipaa {
+    background-color: #2E8B57;
+    color: white;
+  }
+  
+  .tech-badge.fhir {
+    background-color: #D6336C;
+    color: white;
+  }
+  
+  .tech-badge.model {
+    background-color: #6C757D; /* neutral gray */
+    color: white;
+  }
+  
+  
+  /* Tech Badges */
+  .tech-badge.python { background-color: #3776AB; }
+  .tech-badge.openai { background-color: #10a37f; }
+  .tech-badge.tensorflow { background-color: #FF6F00; }
+  .tech-badge.webspeech { background-color: #34A853; }
+  .tech-badge.aws { background-color: #232F3E; }
+  .tech-badge.mongodb { background-color: #47A248; }
+  .tech-badge.redis { background-color: #DC382D; }
+  .tech-badge.vision { background-color: #4285F4; }
+  .tech-badge.react { background-color: #61DAFB; color: #333; }
+  .tech-badge.pinecone { background-color: #6C8EBF; }
+  .tech-badge.hipa { background-color: #0F4C81; }
+  .tech-badge.fda { background-color: #003E74; }
+  .tech-badge.vision { background-color: #4B8DF8; }
+  .tech-badge.whisper { background-color: #38A169; }
+  .tech-badge.gunicorn { background-color: #20835C; }
+  .tech-badge.dotenv { background-color: #586E75; }
+  .tech-badge.js { background-color: #F0DB4F; color: #000; }
+  .tech-badge.quantum { background-color: #8A2BE2; }
+  .tech-badge.lora { background-color: #CC6699; }
+
+  
+  /* Medication Cards */
+  .med-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px;
+  }
+  
+  .med-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  
+  .med-card-body {
+    padding: 12px;
+  }
+  
+  .med-card-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .med-card-category {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .relation-badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .input-methods {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .info-panel {
+      height: auto;
+      position: relative;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .tech-list li {
+      margin-bottom: 12px;
+    }
+    
+    .action-bar {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .app-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .app-header > div {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #spinnerOverlay {
+    position: fixed;
+    inset: 0; /* top: 0; bottom: 0; left: 0; right: 0 */
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent backdrop */
+    flex-direction: column;
+    font-size: 0.95rem;
+    padding: 20px;
+  }
+  
+  
+  
