@@ -28,3 +28,11 @@ DecodeRx lets users search for medications using voice, image, or text. It retur
 ```bash
 pip install -r requirements.txt
 python application.py
+
+### 🔐 Environment Variables
+
+Before running, create a `.env` file in the root folder with the following:
+
+```env
+OPENAI_API_KEY=your_openai_key_here
+
